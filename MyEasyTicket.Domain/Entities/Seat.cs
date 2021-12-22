@@ -4,12 +4,12 @@
     {
 
         public int Number { get; private set; }
-        public string Section { get; private set; }
+        public bool Available { get; private set; }
 
-        public Seat(int number, string section)
+        public Seat(int number)
         {
             this.Number = number;
-            this.Section = section;
+            this.Available = true;
         }
     }
 }
