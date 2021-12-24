@@ -1,6 +1,8 @@
-﻿namespace MyEasyTicket.Domain.Entities
+﻿using MyEasyTicket.Domain.Validations.ValueObject;
+
+namespace MyEasyTicket.Domain.ValueObject
 {
-    public class Seat : BaseEntity
+    public class Seat : BaseValueObject
     {
 
         public int Number { get; private set; }
@@ -10,6 +12,8 @@
         {
             this.Number = number;
             this.Available = true;
+
+            Validate(this, new SeatValidation());
         }
     }
 }

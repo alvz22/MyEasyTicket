@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using MyEasyTicket.Domain.Validations.Entities;
+using MyEasyTicket.Domain.ValueObject;
+using System.Collections.Generic;
 
 namespace MyEasyTicket.Domain.Entities
 {
@@ -8,12 +10,23 @@ namespace MyEasyTicket.Domain.Entities
         public Film Film { get; private set; }
         public Dictionary<string, Seat> Seats { get; private set; }
 
-        public Hall(string hallIndentification, Film movie, int seatsNumber)
+        public Hall(string hallIndentification, Film film, int seatsNumber)
         {
             this.HallIndentification = hallIndentification;
-            this.Film = movie;
+            this.Film = film;
             SetSeatsNumber(seatsNumber);
 
+            Validate(this, new HallValidation());
+        }
+
+
+        public void HallUpdate(string hallIndentification, Film film, int seatsNumber)
+        {
+            this.HallIndentification = hallIndentification;
+            this.Film = film;
+            SetSeatsNumber(seatsNumber);
+
+            Validate(this, new HallValidation());
         }
 
         private void SetSeatsNumber(int quantity)

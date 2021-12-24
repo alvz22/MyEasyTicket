@@ -7,13 +7,15 @@ namespace MyEasyTicket.Domain.Entities
     {
         public string Name { get; private set; }
         public Address Address { get; private set; }
-        public IEnumerable<Hall> Rooms { get;  set; }
+        public Dictionary<string, Hall> Rooms { get;  set; }
 
-        public Movie(string name, Address address, IEnumerable<Hall> rooms)
+        public Movie(string name, Address address, Dictionary<string, Hall> rooms)
         {
             this.Name = name;
             this.Address = address;
             this.Rooms = rooms;
         }
+
+        //criar metodo para adicionar a quantidade de salas do cinema.
     }
 }
