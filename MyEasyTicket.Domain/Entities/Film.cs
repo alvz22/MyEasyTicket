@@ -1,4 +1,5 @@
 ﻿using MyEasyTicket.Domain.Validations.Entities;
+using System;
 
 namespace MyEasyTicket.Domain.Entities
 {
@@ -16,6 +17,7 @@ namespace MyEasyTicket.Domain.Entities
             this.Description = description;
             this.Duration = duration;
             this.TicketPrice = ticketprice;
+            this.CreationDate = DateTime.Now;
 
             Validate(this, new FilmValidation());
         }
@@ -26,6 +28,7 @@ namespace MyEasyTicket.Domain.Entities
             this.Description = description;
             this.Duration = duration;
             this.TicketPrice = ticketprice;
+            this.UpdateDate = DateTime.Now;
 
             Validate(this, new FilmValidation());
         }

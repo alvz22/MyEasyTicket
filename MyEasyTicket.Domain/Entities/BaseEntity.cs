@@ -7,8 +7,8 @@ namespace MyEasyTicket.Domain.Entities
     public abstract class BaseEntity
     {
         protected int Id { get; private set; }
-        public DateTime CreationDate { get; private set; }
-        public DateTime UpdateDate { get; private set; }
+        protected DateTime CreationDate { get; set; }
+        protected DateTime UpdateDate { get; set; }
 
         public bool Valid { get; private set; }
         public bool Invalid => !Valid;

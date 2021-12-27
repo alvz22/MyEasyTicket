@@ -17,11 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 Data", "4.1 Data", "{D5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 CrossCutting", "4.2 CrossCutting", "{F3B47264-42FF-4954-98BD-04A266D43EE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEasyTicket.Domain", "MyEasyTicket.Domain\MyEasyTicket.Domain.csproj", "{22A04A42-DD7B-4BC4-8062-38A3FEA57AE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyEasyTicket.Domain", "MyEasyTicket.Domain\MyEasyTicket.Domain.csproj", "{22A04A42-DD7B-4BC4-8062-38A3FEA57AE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEasyTicket.Business", "MyEasyTicket.Business\MyEasyTicket.Business.csproj", "{3219B3AE-D19B-4B79-B544-4AC4D3B66532}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyEasyTicket.Business", "MyEasyTicket.Business\MyEasyTicket.Business.csproj", "{3219B3AE-D19B-4B79-B544-4AC4D3B66532}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEasyTicket.Data", "MyEasyTicket.Data\MyEasyTicket.Data.csproj", "{20039036-531E-4A14-9FC2-7FCA59946BC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyEasyTicket.Data", "MyEasyTicket.Data\MyEasyTicket.Data.csproj", "{20039036-531E-4A14-9FC2-7FCA59946BC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEasyTicket.Test", "MyEasyTicket.Test\MyEasyTicket.Test.csproj", "{7E0A4251-A490-4C93-969C-4AD0AAED7B54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{20039036-531E-4A14-9FC2-7FCA59946BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20039036-531E-4A14-9FC2-7FCA59946BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20039036-531E-4A14-9FC2-7FCA59946BC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E0A4251-A490-4C93-969C-4AD0AAED7B54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E0A4251-A490-4C93-969C-4AD0AAED7B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E0A4251-A490-4C93-969C-4AD0AAED7B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E0A4251-A490-4C93-969C-4AD0AAED7B54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{22A04A42-DD7B-4BC4-8062-38A3FEA57AE4} = {FA21BC33-F13A-4DD3-B3B2-037A1C0D93E0}
 		{3219B3AE-D19B-4B79-B544-4AC4D3B66532} = {FA21BC33-F13A-4DD3-B3B2-037A1C0D93E0}
 		{20039036-531E-4A14-9FC2-7FCA59946BC3} = {D55577FB-7DE3-49B1-AD49-9723E5F2CE8D}
+		{7E0A4251-A490-4C93-969C-4AD0AAED7B54} = {193B294F-EB1C-4D4E-B8A1-2005EFB7E740}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4698E9A4-7647-458E-A911-6BF060B10724}

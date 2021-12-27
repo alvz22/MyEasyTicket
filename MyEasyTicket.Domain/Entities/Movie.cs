@@ -1,4 +1,5 @@
-﻿using MyEasyTicket.Domain.ValueObject;
+﻿using MyEasyTicket.Domain.Validations.Entities;
+using MyEasyTicket.Domain.ValueObject;
 using System.Collections.Generic;
 
 namespace MyEasyTicket.Domain.Entities
@@ -7,15 +8,26 @@ namespace MyEasyTicket.Domain.Entities
     {
         public string Name { get; private set; }
         public Address Address { get; private set; }
-        public Dictionary<string, Hall> Rooms { get;  set; }
 
-        public Movie(string name, Address address, Dictionary<string, Hall> rooms)
+
+        public int HallId { get; set; }
+        public IEnumerable<Hall> Halls { get;  set; }
+
+        public Movie(string name, Address address)
         {
             this.Name = name;
             this.Address = address;
-            this.Rooms = rooms;
+
+            Validate(this, new MovieValidation());
         }
 
-        //criar metodo para adicionar a quantidade de salas do cinema.
+        public void MovieUpdate(string name, Address address)
+        {
+            this.Name = name;
+            this.Address = address;
+
+            Validate(this, new MovieValidation());
+        }
+
     }
 }

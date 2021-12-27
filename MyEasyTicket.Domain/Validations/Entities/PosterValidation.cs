@@ -14,10 +14,11 @@ namespace MyEasyTicket.Domain.Validations.Entities
 
         private void RuleOfProperty()
         {
-            RuleFor(p => p.Film).NotEmpty().WithMessage(Message.Required.Description());
+            RuleFor(p => p.Description).NotEmpty().WithMessage(Message.Required.Description());
+            RuleFor(p => p.Description).Length(10, 250).WithMessage(Message.MoreExpected
+                .Description().FormatMessage("Description", "from 10 to 250 caracters"));
 
-            RuleFor(p => p.StartDate).NotEmpty().WithMessage(Message.Required.Description());
-            RuleFor(p => p.FinalDate).NotEmpty().WithMessage(Message.Required.Description());
+            RuleFor(p => p.ImgUrl).NotEmpty().WithMessage(Message.Required.Description());
         }
     }
 }

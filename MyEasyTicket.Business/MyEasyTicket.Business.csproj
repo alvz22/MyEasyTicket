@@ -5,9 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DomainNotificationHandler\" />
-    <Folder Include="Interfaces\NotificationHandlers\" />
-    <Folder Include="Interfaces\Repositories\" />
+    <ProjectReference Include="..\MyEasyTicket.Domain\MyEasyTicket.Domain.csproj" />
   </ItemGroup>
 
 </Project>

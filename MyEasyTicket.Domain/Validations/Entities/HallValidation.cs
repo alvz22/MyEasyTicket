@@ -18,8 +18,6 @@ namespace MyEasyTicket.Domain.Validations.Entities
             RuleFor(h => h.HallIndentification)
                 .Length(1, 10).WithMessage(Message.MoreExpected.Description()
                 .FormatMessage("Hall Indetification", "1 or 10 caracteres"));
-
-            RuleFor(h => h.Film).NotEmpty().WithMessage(Message.Required.Description());
         }
     }
 }

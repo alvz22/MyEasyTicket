@@ -1,19 +1,17 @@
 ﻿using MyEasyTicket.Domain.Validations.Entities;
-using System;
 
 namespace MyEasyTicket.Domain.Entities
 {
     public class Poster : BaseEntity
     {
-        public Film Film { get; private set; }
-        public DateTime StartDate { get; private set; }
-        public DateTime FinalDate { get; private set; }
+        public string ImgUrl { get; private set; }
+        public string Description { get; private set; }
+                
 
-        public Poster(Film film, DateTime startDate, DateTime finalDate)
+        public Poster(string imgUrl, string description)
         {
-            this.Film = film;
-            this.StartDate = startDate;
-            this.FinalDate = finalDate;
+            this.ImgUrl = imgUrl;
+            this.Description = description;
 
             Validate(this, new PosterValidation());
         }
