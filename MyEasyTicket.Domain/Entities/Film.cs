@@ -22,7 +22,7 @@ namespace MyEasyTicket.Domain.Entities
             Validate(this, new FilmValidation());
         }
 
-        public void FilmUpdate(string name, string description, string duration, decimal ticketprice)
+        public void UpdateFilm(string name, string description, string duration, decimal ticketprice)
         {
             this.Name = name;
             this.Description = description;

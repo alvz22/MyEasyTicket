@@ -19,6 +19,8 @@ namespace MyEasyTicket.Domain.Validations.Entities
                 .Description().FormatMessage("Description", "from 10 to 250 caracters"));
 
             RuleFor(p => p.ImgUrl).NotEmpty().WithMessage(Message.Required.Description());
+            RuleFor(p => p.ImgUrl).Length(3, 250).WithMessage(Message.MoreExpected
+                .Description().FormatMessage("Img", "from 3 to 250 caracters"));
         }
     }
 }

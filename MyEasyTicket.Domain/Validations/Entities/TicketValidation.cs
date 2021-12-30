@@ -19,7 +19,7 @@ namespace MyEasyTicket.Domain.Validations.Entities
                 .Description().FormatMessage("Film name", "from 2 to 50 caracters"));
 
             RuleFor(t => t.Information).NotEmpty().WithMessage(Message.Required.Description());
-            RuleFor(t => t.Information).Length(10, 250).WithMessage(Message.MoreExpected
+            RuleFor(t => t.Information).Length(3, 250).WithMessage(Message.MoreExpected
                 .Description().FormatMessage("Information", "from 10 to 250 caracters"));
 
             RuleFor(t => t.Price).NotEmpty().WithMessage(Message.Required.Description());

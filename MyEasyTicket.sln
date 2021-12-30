@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyEasyTicket.Business", "My
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyEasyTicket.Data", "MyEasyTicket.Data\MyEasyTicket.Data.csproj", "{20039036-531E-4A14-9FC2-7FCA59946BC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEasyTicket.Test", "MyEasyTicket.Test\MyEasyTicket.Test.csproj", "{7E0A4251-A490-4C93-969C-4AD0AAED7B54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyEasyTicket.Test", "MyEasyTicket.Test\MyEasyTicket.Test.csproj", "{7E0A4251-A490-4C93-969C-4AD0AAED7B54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsoleApplication", "TestConsoleApplication\TestConsoleApplication.csproj", "{EE7BAF69-9045-4A6F-8204-BBC5A8A6C548}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{7E0A4251-A490-4C93-969C-4AD0AAED7B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E0A4251-A490-4C93-969C-4AD0AAED7B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E0A4251-A490-4C93-969C-4AD0AAED7B54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE7BAF69-9045-4A6F-8204-BBC5A8A6C548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE7BAF69-9045-4A6F-8204-BBC5A8A6C548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE7BAF69-9045-4A6F-8204-BBC5A8A6C548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE7BAF69-9045-4A6F-8204-BBC5A8A6C548}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{3219B3AE-D19B-4B79-B544-4AC4D3B66532} = {FA21BC33-F13A-4DD3-B3B2-037A1C0D93E0}
 		{20039036-531E-4A14-9FC2-7FCA59946BC3} = {D55577FB-7DE3-49B1-AD49-9723E5F2CE8D}
 		{7E0A4251-A490-4C93-969C-4AD0AAED7B54} = {193B294F-EB1C-4D4E-B8A1-2005EFB7E740}
+		{EE7BAF69-9045-4A6F-8204-BBC5A8A6C548} = {193B294F-EB1C-4D4E-B8A1-2005EFB7E740}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4698E9A4-7647-458E-A911-6BF060B10724}

@@ -21,10 +21,10 @@ namespace MyEasyTicket.Domain.Entities
             Validate(this, new MovieValidation());
         }
 
-        public void MovieUpdate(string name, Address address)
+        public void UpdateMovie(string name, Address address)
         {
             this.Name = name;
-            this.Address = address;
+            this.Address.UpdateAddress(address.CompleteAddress, address.AddressNumber, address.City, address.State);
 
             Validate(this, new MovieValidation());
         }

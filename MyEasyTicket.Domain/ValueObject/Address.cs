@@ -18,5 +18,15 @@ namespace MyEasyTicket.Domain.ValueObject
 
             Validate(this, new AddressValidation());
         }
+
+        public void UpdateAddress(string completeAddress, string addressNumber, string city, string state)
+        {
+            this.CompleteAddress = completeAddress;
+            this.AddressNumber = addressNumber;
+            this.City = city;
+            this.State = state;
+
+            Validate(this, new AddressValidation());
+        }
     }
 }

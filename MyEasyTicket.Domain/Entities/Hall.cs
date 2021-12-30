@@ -6,25 +6,24 @@ namespace MyEasyTicket.Domain.Entities
 {
     public class Hall : BaseEntity
     {
-        public string HallIndentification { get; private set; }
+        public string HallIdentification { get; private set; }
         public Dictionary<string, Seat> Seats { get; private set; }
 
         public int FilmId { get; set; }
         public Film Film { get; private set; }
 
-        public Hall(string hallIndentification, int seatsNumber)
+        public Hall(string hallIdentification, int seatsNumber)
         {
-            this.HallIndentification = hallIndentification;
+            this.HallIdentification = hallIdentification;
             SetSeatsNumber(seatsNumber);
 
             Validate(this, new HallValidation());
         }
 
 
-        public void HallUpdate(string hallIndentification, Film film, int seatsNumber)
+        public void UpdateHall(string hallIndentification, int seatsNumber)
         {
-            this.HallIndentification = hallIndentification;
-            this.Film = film;
+            this.HallIdentification = hallIndentification;
             SetSeatsNumber(seatsNumber);
 
             Validate(this, new HallValidation());
@@ -35,9 +34,13 @@ namespace MyEasyTicket.Domain.Entities
             this.Seats = new Dictionary<string, Seat>();
             int count;
 
-            for (count = 1; count < quantity; count++)
+            if (quantity > 0)
             {
-                this.Seats.Add($"Seat {count}", new Seat(count));
+
+                for (count = 0; count < quantity; count++)
+                {
+                    this.Seats.Add($"Seat {count + 1}", new Seat(count + 1));
+                }
             }
         }
     }

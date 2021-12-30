@@ -10,10 +10,18 @@ namespace MyEasyTicket.Domain.ValueObject
 
         public Seat(int number)
         {
-            this.Number = number;
-            this.Available = true;
+            if (number > 0)
+            {
+                this.Number = number;
+            }
+
 
             Validate(this, new SeatValidation());
+
+            if (this.Valid)
+            {
+                this.Available = true;
+            }
         }
     }
 }

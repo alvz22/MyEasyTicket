@@ -21,7 +21,7 @@ namespace MyEasyTicket.Domain.Entities
             Validate(this, new TicketValidation());
         }
 
-        public void TicketUpdate(string filmName, string information, decimal price)
+        public void UpdateTicket(string filmName, string information, decimal price)
         {
             this.FilmName = filmName;
             this.Information = information;
